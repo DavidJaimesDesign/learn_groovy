@@ -1,6 +1,7 @@
 class User{
     private String username
-    
+    //private Array workouts
+
     User(String name) {
         username = name
     }
@@ -8,4 +9,5 @@ class User{
     String getName(){
         return username
     }
+
 }
