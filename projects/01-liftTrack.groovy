@@ -18,10 +18,8 @@ def dl    = new Exercise("DeadLift", dlMax.toInteger())
 def bench = new Exercise("Bench", benchMax.toInteger())
 def ohp   = new Exercise("OverHeadPress", ohpMax.toInteger())
 
-def workout = [squat, dl, bench, ohp]
+def workout = new Workout("first",[squat, dl, bench, ohp])
 
-println "These are your current maxes"
+println "This is your workout plan"
 
-workout.each { exercise ->
-    println exercise.getName() + " max: " + exercise.getMax()
-}
+println  workout.printWorkoutSS()
