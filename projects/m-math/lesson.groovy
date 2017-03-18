@@ -14,4 +14,15 @@ class Lesson{
 	String getProgress(){
 		return progress
 	}
+
+	String start(){
+		def timer = new Timer()
+		def lessonLoop = new Level1Loop() 	
+		def endLesson = timer.runAfter(10000){
+			println "Out of time Lesson complete"
+			lessonLoop.stop()
+		}
+
+		lessonLoop.start()
+	}
 }
