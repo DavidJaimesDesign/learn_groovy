@@ -1,3 +1,4 @@
+//horizontal addition and substraction
 class Level1Loop {
 	private Integer level
 	private Boolean lessonLoop
