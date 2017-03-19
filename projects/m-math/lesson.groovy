@@ -29,11 +29,11 @@ class Lesson{
 	private levelSelect(level){
 		def lessonLoop
 		switch(level) {
-				case 1: lessonLoop = new Level1Loop()
-				case 2: lessonLoop = new Level2Loop()
-				case 3: lessonLoop = new Level3Loop()
-				case 4: lessonLoop = new Level4Loop()
-				case 5: lessonLoop = new Level5Loop(); break
+				case 1: lessonLoop = new Level1Loop(progress); break
+				case 2: lessonLoop = new Level2Loop(progress); break
+				case 3: lessonLoop = new Level3Loop(progress); break
+				case 4: lessonLoop = new Level4Loop(progress); break
+				case 5: lessonLoop = new Level5Loop(progress); break
 				default: lessonLoop = new Level1Loop()
 		}	
 
