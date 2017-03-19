@@ -31,9 +31,6 @@ class Level1Loop {
 		def b = Math.abs(new Random().nextInt() % 8) + 1
 
 		def answer = System.console().readLine a + ' + ' + b +' = '
-		if(answer.toInteger() != a + b){
-			wrongAnswers << [a, b, answer.toInteger]
-		}
 	}
 
 	def progress25(){
@@ -41,9 +38,6 @@ class Level1Loop {
 		def b = Math.abs(new Random().nextInt() % 6) + 8
 
 		def answer = System.console().readLine a + ' + ' + b +' = '
-		if(answer.toInteger() != a + b){
-			wrongAnswers << [a, b, answer.toInteger]
-		}
 	}
 
 	def progress50(){
@@ -51,9 +45,6 @@ class Level1Loop {
 		def b = Math.abs(new Random().nextInt() % a) + 1
 
 		def answer = System.console().readLine a + ' - ' + b +' = '
-		if(answer.toInteger() != a - b){
-			wrongAnswers << [a, b, answer.toInteger]
-		}
 	}
 
 	def progress75(){
