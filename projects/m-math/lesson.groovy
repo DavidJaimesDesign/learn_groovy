@@ -33,7 +33,6 @@ class Lesson{
 				case 2: lessonLoop = new Level2Loop(progress); break
 				case 3: lessonLoop = new Level3Loop(progress); break
 				case 4: lessonLoop = new Level4Loop(progress); break
-				case 5: lessonLoop = new Level5Loop(progress); break
 				default: lessonLoop = new Level1Loop()
 		}	
 

@@ -11,17 +11,36 @@ class Level5Loop {
 	}
 	def start(){
 		while (lessonLoop) {
-			def a = Math.abs(new Random().nextInt() % 10) + 1
-			def b = Math.abs(new Random().nextInt() % 10) + 1
-
-			def answer = System.console().readLine a + ' 5 ' + b +' = '
-			if(answer.toInteger() != a + b){
-				wrongAnswers << [a, b, answer.toInteger]
+			switch(progress) {
+				case 0.00: progress0(); break
+				case 0.25: progress25(); break
+				case 0.50: progress50(); break
+				case 0.75: progress75(); break
+				default:   progress0()
 			}
 		}
 	}
 
 	def stop(){
 		lessonLoop = false
+	}
+	//add fractions
+	def progress0(){
+		def denom_a = Math.abs(new Random().nextInt() % 10) + 2 
+		def numer_a = Math.abs(new Random().nextInt() % 10) + 2
+		def denom_b = Math.abs(new Random().nextInt() % 50) + 10
+		def numer_b = Math.abs(new Random().nextInt() % 50) + 10
+	}
+	//substract fractions
+	def progress25(){
+
+	}
+	//multiply fractions and turning to full fractions
+	def progress50(){
+
+	}
+	//divide fractions
+	def progress75(){
+
 	}
 }
